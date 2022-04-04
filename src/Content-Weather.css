@@ -1,0 +1,94 @@
+.Weather {
+  margin-top: 80px;
+}
+.Weather .content {
+  border: none;
+}
+.Weather .today-left .today {
+  padding-top: 10px;
+}
+.Weather .small {
+  font-size: 20px;
+  color: rgb(82, 83, 87);
+  padding-left: 25px;
+}
+.Weather .date {
+  line-height: 40px;
+  font-size: 30px;
+  padding-left: 25px;
+}
+.Weather .today {
+  font-size: 30px;
+  background-color: hsla(154, 37%, 76%, 0);
+  border: none;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.Weather .left {
+  padding-bottom: 0;
+  min-height: fit-content;
+  text-align: left;
+}
+
+.Weather .city-weather {
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: left;
+  font-weight: 900;
+  padding-left: 25px;
+}
+.Weather .city {
+  display: block;
+  margin: 20px auto auto;
+}
+.Weather .country {
+  display: block;
+  margin: 15px auto;
+  font-size: 30px;
+}
+.Weather .current-temp {
+  display: inline;
+  margin-top: 20px;
+  font-size: 80px;
+}
+.Weather .units {
+  font-size: 30px;
+  position: relative;
+  display: inline;
+  top: -30px;
+  padding-left: 0;
+  border: solid;
+  border-color: rgb(19, 107, 120);
+  border-radius: 8px;
+}
+
+.Weather .todays-icon {
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.Weather .weather-today-icon p {
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.Weather .right {
+  min-height: fit-content;
+}
+.Weather .wind p,
+.Weather .humidity p,
+.Weather .sunrise p {
+  display: inline-flex;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.Weather .wind div,
+.Weather .humidity div,
+.Weather .sunrise div {
+  font-size: 15px;
+  margin: 0 auto;
+  padding: auto;
+  text-align: center;
+}

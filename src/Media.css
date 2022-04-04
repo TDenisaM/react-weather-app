@@ -1,0 +1,109 @@
+@media (max-width: 992px) {
+  .search-box {
+    width: 300px;
+  }
+  .Search .search-form {
+    margin: 55px auto auto 290px;
+  }
+
+  .right div {
+    font-size: 20px;
+  }
+  .App {
+    max-width: fit-content;
+    min-width: fit-content;
+  }
+
+  .Weather {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: fit-content;
+    height: fit-content;
+  }
+  .today-left {
+    max-height: 300px;
+  }
+  .weather-today-icon p {
+    font-size: 20px;
+  }
+  .wind p,
+  .humidity p,
+  .sunrise p,
+  .wind div,
+  .humidity div,
+  .sunrise div {
+    display: inline-flex;
+  }
+
+  .now div,
+  .tue div {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .search-box {
+    max-width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .hello {
+    display: none;
+  }
+  .Search .search-form {
+    margin: 55px auto auto 30px;
+    max-width: fit-content;
+  }
+}
+@media (max-width: 576px) {
+  .App {
+    max-width: fit-content;
+    min-width: fit-content;
+  }
+
+  .left {
+    min-width: fit-content;
+    min-height: 300px;
+  }
+  .weather-today-text {
+    max-height: 300px;
+    max-width: 250px;
+  }
+  .weather-today-icon {
+    max-height: 300px;
+    max-width: 150px;
+  }
+
+  .weather-today-icon p {
+    font-size: 20px;
+  }
+
+  .tue,
+  .now {
+    margin-bottom: 15px;
+    max-width: fit-content;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .current-location-button {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .search-box {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .search-button {
+    padding: 5px;
+    font-size: 15px;
+  }
+  footer {
+    margin: 20px auto;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    max-width: 450px;
+  }
+}

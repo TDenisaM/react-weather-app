@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import Search from "./Search.js";
+import ContentWeather from "./Content-Weather.js";
+import Forecast from "./Forecast.js";
+import Footer from "./Footer.js";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import "./App.css";
+import "./Media.css";
+
+function App() {
+  return (
+    <div className="App">
+      <div className="wrapper-container">
+        <Search />
+        <ContentWeather />
+        <Forecast />
+        <Footer />
+      </div>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);

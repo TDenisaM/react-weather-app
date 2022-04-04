@@ -1,0 +1,35 @@
+.Forecast {
+  margin: 0 auto;
+}
+.Forecast .the-day {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 5px;
+  border: solid;
+  border-radius: 30px;
+  border-color: #1c7696;
+  background-color: rgba(95, 113, 114, 0.409);
+}
+.Forecast .now {
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 25px;
+}
+.Forecast .forecast-weather {
+  text-align: center;
+  padding: 10px 5px;
+  margin: 25px auto;
+  border: solid;
+  border-radius: 30px;
+  border-color: #1c7696;
+  background-color: rgba(95, 113, 114, 0.409);
+}
+
+.Forecast .tue {
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 25px;
+}
+.Forecast .temperature-min {
+  opacity: 0.5;
+}
