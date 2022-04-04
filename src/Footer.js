@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="Footer">
       <a
-        href="https://github.com/TDenisaM/my-weather-app"
+        href="https://github.com/TDenisaM/react-weather-app"
         target="_blank"
         rel="noreferrer"
       >
