@@ -20,6 +20,7 @@ export default function Search() {
           type="search"
           placeholder="Type city"
           autoComplete="off"
+          autoFocus="on"
         />
         <input className="search-button" type="submit" value="Search" />
         <button
