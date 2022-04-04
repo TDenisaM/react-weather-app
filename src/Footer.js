@@ -10,9 +10,19 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        Open-source code
+        Open-source on GitHub
       </a>
-      <span>by Denisa-Maria Tudor</span>
+      <span>
+        {" "}
+        coded by{" "}
+        <a
+          href="https://mellifluous-jelly-540b2e.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Denisa M. Tudor
+        </a>
+      </span>
     </footer>
   );
 }
