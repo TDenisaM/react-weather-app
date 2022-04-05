@@ -8,6 +8,7 @@ import FormatingSunrise from "./FormatingSunrise";
 
 export default function ContentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
+  let [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     setWeatherData({
@@ -22,13 +23,14 @@ export default function ContentWeather(props) {
       wind: response.data.wind.speed,
       sunrise: new Date(response.data.sys.sunrise * 1000),
     });
-    console.log(response);
   }
+
   function search() {
+    setCity(props.value);
     const units = "metric";
     const apiKey = "c263b408beea5a53bf5cae8b844890fd";
     const apiEndPoint = "https://api.openweathermap.org/data/2.5/weather?q=";
-    let apiUrl = `${apiEndPoint}${props.value}&units=${units}&appid=${apiKey}`;
+    let apiUrl = `${apiEndPoint}${city}&units=${units}&appid=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 

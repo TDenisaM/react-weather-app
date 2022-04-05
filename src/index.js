@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <div className="cantainer wrapper-container">
         <Search />
-        <ContentWeather />
+        <ContentWeather defaultCity="Oslo" />
 
         <Footer />
       </div>
