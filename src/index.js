@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.css";
 
 import Search from "./Search.js";
 import ContentWeather from "./Content-Weather.js";
-import Forecast from "./Forecast.js";
+//import Forecast from "./Forecast.js";
 import Footer from "./Footer.js";
 
 import "./App.css";
@@ -16,11 +16,12 @@ function App() {
       <div className="cantainer wrapper-container">
         <Search />
         <ContentWeather />
-        <Forecast />
+
         <Footer />
       </div>
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App tab="home" />);
