@@ -5,6 +5,7 @@ import "./Media.css";
 import FormatingDate from "./FormatingDate";
 import FormatingSunrise from "./FormatingSunrise";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherContent(props) {
   return (
@@ -23,8 +24,9 @@ export default function WeatherContent(props) {
                   <div className="city-weather">
                     <p className="city">{props.data.city}</p>
                     <p className="country">{props.data.country}</p>
-                    <p className="current-temp">{props.data.temperature}</p>
-                    <p className="units">°C</p>
+                    <p className="curent-temperature">
+                      <WeatherTemperature celsius={props.data.temperature} />
+                    </p>
                   </div>
                 </div>
                 <div className="col-sm-5 weather-today-icon">

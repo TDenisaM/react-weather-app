@@ -49,10 +49,13 @@
 .Weather .current-temp {
   display: inline;
   margin-top: 20px;
+  margin-right: 20px;
   font-size: 80px;
 }
-.Weather .units {
+
+.Weather .activeUnit {
   font-size: 30px;
+  margin: 0 10px;
   position: relative;
   display: inline;
   top: -30px;
@@ -61,7 +64,26 @@
   border-color: rgb(19, 107, 120);
   border-radius: 8px;
 }
-
+.Weather .unactiveUnit a {
+  font-size: 30px;
+  margin: 0 10px;
+  position: relative;
+  display: inline;
+  top: -30px;
+  padding-left: 0;
+  text-decoration: none;
+  color: rgb(19, 107, 120);
+}
+.Weather .unactiveUnit a:hover {
+  font-size: 40px;
+  cursor: pointer;
+  position: relative;
+  display: inline;
+  top: -30px;
+  padding-left: 0;
+  text-decoration: none;
+  color: rgb(19, 107, 120);
+}
 .Weather .todays-icon {
   padding-top: 30px;
   display: block;
