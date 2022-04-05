@@ -12,10 +12,11 @@ export default function Search(props) {
 
   function handleResponse(response) {
     setWeatherData({
+      ready: true,
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       country: response.data.sys.country,
       temperature: Math.round(response.data.main.temp),
-      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       imgUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       humidity: response.data.main.humidity,

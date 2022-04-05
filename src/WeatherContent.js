@@ -11,7 +11,7 @@ export default function WeatherContent(props) {
       <small className="small">Last updated:</small>
       <div className="date">
         {" "}
-        <FormatingDate date={props.data.date} />
+        <FormatingDate currentDate={props.data.date} />
       </div>
       <div className="container weather-content">
         <div className="row content">

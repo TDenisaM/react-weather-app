@@ -8,9 +8,9 @@ export default function FormatingDate(props) {
     "Friday",
     "Saturday",
   ];
-  let day = days[props.date.getDay()];
-  let hours = String(props.date.getHours()).padStart(2, "0");
-  let minutes = String(props.date.getMinutes()).padStart(2, "0");
+  let day = days[props.currentDate.getDay()];
+  let hours = String(props.currentDate.getHours()).padStart(2, "0");
+  let minutes = String(props.currentDate.getMinutes()).padStart(2, "0");
 
   return `${day}, ${hours}:${minutes}`;
 }
