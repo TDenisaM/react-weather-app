@@ -3,7 +3,8 @@ import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.css";
 
 import Search from "./Search.js";
-import ContentWeather from "./Content-Weather.js";
+import WeatherContent from "./WeatherContent";
+
 //import Forecast from "./Forecast.js";
 import Footer from "./Footer.js";
 
@@ -14,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <div className="cantainer wrapper-container">
-        <Search />
-        <ContentWeather defaultCity="Oslo" />
+        <Search defaultCity="Oslo" />
+        <WeatherContent />
 
         <Footer />
       </div>
