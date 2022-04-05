@@ -4,6 +4,7 @@ import "./WeatherContent.css";
 import "./Media.css";
 import FormatingDate from "./FormatingDate";
 import FormatingSunrise from "./FormatingSunrise";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherContent(props) {
   return (
@@ -27,11 +28,9 @@ export default function WeatherContent(props) {
                   </div>
                 </div>
                 <div className="col-sm-5 weather-today-icon">
-                  <img
-                    src={props.data.imgUrl}
-                    className="img-fluid rounded-start todays-icon"
+                  <WeatherIcon
+                    code={props.data.icon}
                     alt={props.data.description}
-                    width="170px"
                   />
                   <p>{props.data.description}</p>
                 </div>

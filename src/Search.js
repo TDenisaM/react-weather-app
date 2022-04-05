@@ -18,7 +18,7 @@ export default function Search(props) {
       country: response.data.sys.country,
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
-      imgUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       sunrise: new Date(response.data.sys.sunrise * 1000),
