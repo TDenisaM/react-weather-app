@@ -22,5 +22,5 @@ export default function WeatherIcon(props) {
     "50n": "fog-night",
   };
   let name = codeMapping[props.code];
-  return <img src="images/{name}" alt={props.alt} />;
+  return <img src="images/{name}.png" alt={props.alt} />;
 }
