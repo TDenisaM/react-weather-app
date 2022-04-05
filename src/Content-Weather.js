@@ -3,7 +3,8 @@ import axios from "axios";
 
 import "./Content-Weather.css";
 import "./Media.css";
-import FormatingDates from "./FormatingDates";
+import FormatingDate from "./FormatingDate";
+import FormatingSunrise from "./FormatingSunrise";
 
 export default function ContentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -14,12 +15,12 @@ export default function ContentWeather(props) {
       city: response.data.name,
       country: response.data.sys.country,
       temperature: Math.round(response.data.main.temp),
-      date: new Date(response.data.coord.dt),
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       imgUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      //sunrise: props.date(response.data.sys.sunrise),
+      sunrise: new Date(response.data.sys.sunrise * 1000),
     });
     console.log(response);
   }
@@ -37,7 +38,7 @@ export default function ContentWeather(props) {
         <small className="small">Last updated:</small>
         <div className="date">
           {" "}
-          <FormatingDates date={weatherData.date} />
+          <FormatingDate date={weatherData.date} />
         </div>
         <div className="container weather-content">
           <div className="row content">
@@ -104,7 +105,10 @@ export default function ContentWeather(props) {
                         />
                         <p> Sunrise: </p>
                       </span>
-                      <div className="sunrise-value">{weatherData.sunrise}</div>
+                      <div className="sunrise-value">
+                        {" "}
+                        <FormatingSunrise sunrise={weatherData.sunrise} />
+                      </div>
                     </div>
                   </div>
                 </div>

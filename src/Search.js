@@ -9,13 +9,13 @@ export default function Search() {
   let [city, setCity] = useState();
   let [showWeather, setShowWeather] = useState();
 
+  function updateCity(event) {
+    return setCity(event.target.value);
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
     return setShowWeather(<ContentWeather value={city} />);
-  }
-
-  function updateCity(event) {
-    return setCity(event.target.value);
   }
 
   return (

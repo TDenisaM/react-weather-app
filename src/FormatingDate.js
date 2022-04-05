@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function FormatingDates(props) {
+export default function FormatingDate(props) {
   let days = [
     "Sunday",
     "Monday",
@@ -13,5 +11,6 @@ export default function FormatingDates(props) {
   let day = days[props.date.getDay()];
   let hours = String(props.date.getHours()).padStart(2, "0");
   let minutes = String(props.date.getMinutes()).padStart(2, "0");
+
   return `${day}, ${hours}:${minutes}`;
 }
