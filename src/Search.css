@@ -4,7 +4,7 @@
 .Search .hello {
   position: absolute;
   margin: 0;
-  padding: 40px;
+  padding: 0 40px;
   color: #12556d;
   text-shadow: 5px 5px 2px rgb(129, 172, 179);
   font-size: 30px;
