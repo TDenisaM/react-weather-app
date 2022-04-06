@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WeatherIcon(props) {
   const codeMapping = {
-    "01d": "sclear-sky-day",
+    "01d": "clear-sky-day",
     "01n": "clear-sky-night",
     "02d": "cloudy-day",
     "02n": "cloudy-night",
@@ -22,5 +22,5 @@ export default function WeatherIcon(props) {
     "50n": "fog-night",
   };
   let name = codeMapping[props.code];
-  return <img src="images/{name}.png" alt={props.alt} />;
+  return <img src={`images/${name}.png`} alt={props.alt} />;
 }
