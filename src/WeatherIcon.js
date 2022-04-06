@@ -1,4 +1,6 @@
 import React from "react";
+import "./WeatherContent.css";
+import "./Media.css";
 
 export default function WeatherIcon(props) {
   const codeMapping = {
@@ -22,5 +24,7 @@ export default function WeatherIcon(props) {
     "50n": "fog-night",
   };
   let name = codeMapping[props.code];
-  return <img src={`images/${name}.png`} alt={props.alt} />;
+  return (
+    <img className="todays-icon" src={`images/${name}.png`} alt={props.alt} />
+  );
 }

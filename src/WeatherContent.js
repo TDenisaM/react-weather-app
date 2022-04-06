@@ -24,9 +24,9 @@ export default function WeatherContent(props) {
                   <div className="city-weather">
                     <p className="city">{props.data.city}</p>
                     <p className="country">{props.data.country}</p>
-                    <p className="curent-temperature">
+                    <div className="curent-temperature">
                       <WeatherTemperature celsius={props.data.temperature} />
-                    </p>
+                    </div>
                   </div>
                 </div>
                 <div className="col-sm-5 weather-today-icon">

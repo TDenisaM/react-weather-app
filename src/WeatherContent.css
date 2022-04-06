@@ -84,10 +84,11 @@
   text-decoration: none;
   color: rgb(19, 107, 120);
 }
-.Weather .todays-icon {
+.Weather .weather-today-icon img {
   padding-top: 30px;
   display: block;
   margin: 0 auto;
+  max-width: 170px;
 }
 .Weather .weather-today-icon p {
   text-align: center;
