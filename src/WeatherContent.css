@@ -39,11 +39,12 @@
 }
 .Weather .city {
   display: block;
-  margin: 20px auto auto;
+  margin: 20px auto 0 auto;
+  line-height: 40px;
 }
 .Weather .country {
   display: block;
-  margin: 15px auto;
+  margin: 0 auto;
   font-size: 30px;
 }
 .Weather .current-temp {
