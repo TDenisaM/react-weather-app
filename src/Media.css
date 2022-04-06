@@ -3,7 +3,7 @@
     width: 250px;
   }
   .Search .search-form {
-    margin: 55px auto auto 290px;
+    margin: 55px auto auto 280px;
   }
 
   .right div {
@@ -54,12 +54,19 @@
     max-width: fit-content;
     min-width: fit-content;
   }
+  .wrapper-container {
+    max-width: fit-content;
+    min-width: fit-content;
+    height: fit-content;
+  }
+  .Search {
+    display: inline;
+  }
   .hello {
     display: none;
   }
   .Search .search-form {
-    margin: 55px auto auto auto;
-    padding-left: 0;
+    margin: 55px auto auto 30px;
   }
   .current-location-button {
     padding: 5px;
