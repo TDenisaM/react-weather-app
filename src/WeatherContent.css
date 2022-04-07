@@ -32,19 +32,20 @@
 
 .Weather .city-weather {
   margin: 0 auto;
-  font-size: 50px;
+
   text-align: left;
   font-weight: 900;
   padding-left: 25px;
 }
 .Weather .city {
+  font-size: 60px;
   display: block;
   margin: 20px auto 0 auto;
-  line-height: 40px;
+  line-height: 50px;
 }
 .Weather .country {
   display: block;
-  margin: 0 auto;
+  margin: 5px auto auto;
   font-size: 30px;
 }
 .Weather .current-temp {
