@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import WeatherContent from "./WeatherContent";
+import WeatherForecast from "./WeatherForecast.js";
 
 import "./Search.css";
 import "./Media.css";
@@ -13,6 +14,7 @@ export default function Search(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       country: response.data.sys.country,
@@ -74,6 +76,7 @@ export default function Search(props) {
           </form>
         </div>
         <WeatherContent data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

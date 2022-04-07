@@ -1,6 +1,10 @@
 .Forecast {
   margin: 0 auto;
 }
+.Forecast .icon img {
+  max-width: 50px;
+  padding: 5px;
+}
 .Forecast .the-day {
   margin: 0 auto;
   text-align: center;
