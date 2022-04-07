@@ -64,5 +64,7 @@ export default function WeatherForecast(props) {
     let apiUrl = `${apiEndPoint}lat=${latitude}&lon=-${longitude}&units=${units}&appid=${apiKey}`;
 
     axios.get(apiUrl).then(handleResponse);
+
+    return null;
   }
 }
