@@ -42,12 +42,16 @@
     font-size: 20px;
     padding: 0;
     margin: 0;
+    max-width: fit-content;
   }
 }
 @media (max-width: 768px) {
   .search-form {
     margin: 0 auto;
     max-width: fit-content;
+  }
+  .icon img {
+    max-width: 60px;
   }
 }
 @media (max-width: 576px) {

@@ -14,13 +14,20 @@ export default function WeatherForecastDaily(props) {
   }
   return (
     <div>
-      <div>{formatForecastDays(props.data.day)}</div>
+      <div>{formatForecastDays(props.data.dt)}</div>
       <div className="icon">
-        <WeatherIcon code={props.data.codeDaily} />
+        <WeatherIcon
+          code={props.data.weather[0].icon}
+          alt={props.data.weather[0].description}
+        />
       </div>
-      <div className="temperature">
-        <span className="temperature-max">{props.data.temperatureMax}°</span>
-        <span className="temperature-min">{props.data.temperatureMin}°</span>
+      <div className="temperatureDaily">
+        <span className="temperature-max">
+          {Math.round(props.data.temp.max)}°
+        </span>
+        <span className=" ms-2 temperature-min">
+          {Math.round(props.data.temp.min)}°
+        </span>
       </div>
     </div>
   );
