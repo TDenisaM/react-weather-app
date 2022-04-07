@@ -17,7 +17,7 @@ export default function WeatherContent(props) {
       </div>
       <div className="container weather-content">
         <div className="row content">
-          <div className="col-lg-7 today-left">
+          <div className="col-lg-8 today-left">
             <div className="card mb-3 today">
               <div className="row left">
                 <div className="col-sm-7 weather-today-text">
@@ -25,7 +25,9 @@ export default function WeatherContent(props) {
                     <p className="city">{props.data.city}</p>
                     <p className="country">{props.data.country}</p>
                     <div className="curent-temperature">
-                      <WeatherTemperature celsius={props.data.temperature} />
+                      <WeatherTemperature
+                        celsius={Math.round(props.data.temperature)}
+                      />
                     </div>
                   </div>
                 </div>
@@ -34,12 +36,12 @@ export default function WeatherContent(props) {
                     code={props.data.icon}
                     alt={props.data.description}
                   />
-                  <p>{props.data.description}</p>
+                  <p className="mt-2">{props.data.description}</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-lg-5 d-flex align-items-center mb-5 today-right ">
+          <div className="col-lg-4 d-flex align-items-center mb-5 today-right ">
             <div className="card mb-3 today">
               <div className="row d-flex right">
                 <div className="col-md-12 conditions">
