@@ -17,7 +17,10 @@ export default function WeatherForecastHourly(props) {
     <div>
       <div>{formatHourlyTime(props.data.time)}</div>
       <div className="icon">
-        <WeatherIcon code={props.data.codeHourly} />
+        <WeatherIcon
+          code={props.data.codeHourly}
+          alt={props.data.description}
+        />
       </div>
       <div>{props.data.temperatureHourly}°</div>
     </div>
