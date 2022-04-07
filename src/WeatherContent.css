@@ -88,7 +88,7 @@
 .Weather .weather-today-icon img {
   display: block;
   margin: 0 auto;
-  max-width: 170px;
+  max-width: 160px;
 }
 .Weather .weather-today-icon p {
   text-align: center;
