@@ -22,11 +22,14 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="Forecast">
-        <div className="row align-items-center d-flex justify-content-evenly the-day">
+        <div className="row d-flex align-items-center the-day">
           {weatherForecastHourly.map(function (hourlyForecast, index) {
             if (index < 7 && index > 0) {
               return (
-                <div className="col-sm-2 now" key={index}>
+                <div
+                  className="d-flex align-items-center col-sm-2 now"
+                  key={index}
+                >
                   <WeatherForecastHourly data={hourlyForecast} />
                 </div>
               );
@@ -35,7 +38,7 @@ export default function WeatherForecast(props) {
             }
           })}
         </div>
-        <div className="row align-items-center d-flex justify-content-evenly forecast-weather">
+        <div className="row d-flex align-items-center forecast-weather">
           {weatherForecastDaily.map(function (dailyForecast, index) {
             if (index < 7 && index > 0) {
               return (
