@@ -4,8 +4,8 @@ import axios from "axios";
 import WeatherContent from "./WeatherContent";
 import WeatherForecast from "./WeatherForecast.js";
 
-import "./Search.css";
 import "./Media.css";
+import "./Search.css";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -48,32 +48,39 @@ export default function Search(props) {
     return (
       <div>
         <div className="Search">
-          <h1 className="hello">
-            Your weather
-            <img
-              className="logo"
-              src="/images/weather-app.svg"
-              alt=""
-              width="175px 125px"
-            />
-          </h1>
-          <form onSubmit={handleSubmit} className="search-form">
-            <input
-              className="search-box"
-              type="search"
-              placeholder="Type city"
-              autoComplete="off"
-              autoFocus="on"
-              onChange={updateCity}
-            />
-            <input className="search-button" type="submit" value="Search" />
-            <button
-              type="button"
-              className="btn btn-primary current-location-button"
+          <div className="row">
+            <div className="col-5 hello-logo">
+              <h1 className="hello">
+                Your weather
+                <img
+                  className="logo"
+                  src="/images/weather-app.svg"
+                  alt=""
+                  width="175px 125px"
+                />
+              </h1>
+            </div>
+            <form
+              onSubmit={handleSubmit}
+              className="col-7 align-middle search-form"
             >
-              Current Location
-            </button>
-          </form>
+              <input
+                className="search-box"
+                type="search"
+                placeholder="Type city"
+                autoComplete="off"
+                autoFocus="on"
+                onChange={updateCity}
+              />
+              <input className="search-button" type="submit" value="Search" />
+              <button
+                type="button"
+                className="btn btn-primary current-location-button"
+              >
+                Current Location
+              </button>
+            </form>
+          </div>
         </div>
         <WeatherContent data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />

@@ -2,22 +2,17 @@
   display: inline;
 }
 .Search .hello {
-  position: absolute;
-  margin: 0;
-  padding: 0 40px;
+  margin-left: 30px;
   color: #12556d;
   text-shadow: 5px 5px 2px rgb(129, 172, 179);
   font-size: 30px;
   font-weight: 900;
 }
 .Search .logo {
+  margin: 5px auto;
   display: block;
-  margin: 5px 25px;
 }
-.Search .search-form {
-  max-width: 800px;
-  margin: 55px 10px auto 350px;
-}
+
 .Search .search-box {
   font-size: 20px;
   padding: 10px;

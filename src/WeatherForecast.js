@@ -27,7 +27,7 @@ export default function WeatherForecast(props) {
             if (index < 7 && index > 0) {
               return (
                 <div
-                  className="d-flex align-items-center col-sm-2 now"
+                  className="d-flex align-items-center col-md-2 now"
                   key={index}
                 >
                   <WeatherForecastHourly data={hourlyForecast} />
@@ -43,7 +43,7 @@ export default function WeatherForecast(props) {
             if (index < 7 && index > 0) {
               return (
                 <div
-                  className="d-flex align-items-center col-sm-2 tue"
+                  className="d-flex align-items-center col-md-2 tue"
                   key={index}
                 >
                   <WeatherForecastDaily data={dailyForecast} />

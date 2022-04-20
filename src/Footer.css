@@ -4,7 +4,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 900;
-  max-width: fit-content;
+  width: fit-content;
   background-color: rgba(221, 181, 212, 0.6);
   border-radius: 50px;
   border: solid;
@@ -13,4 +13,14 @@
 .Footer a {
   text-decoration: none;
   transition: all 150ms ease-in-out;
+}
+@media (max-width: 576px) {
+  .Footer span {
+    font-size: 11px;
+  }
+  .Footer {
+    border-radius: 20px;
+    padding: 3px 5px;
+    line-height: 12px;
+  }
 }

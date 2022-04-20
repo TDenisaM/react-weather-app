@@ -1,17 +1,22 @@
 @media (max-width: 992px) {
+  .App {
+    max-width: fit-content;
+    min-width: fit-content;
+  }
+  .Search .hello {
+    font-size: 20px;
+    padding-right: 0;
+  }
+  .Search .logo {
+    margin: 5px 25px;
+    display: block;
+  }
   .search-box {
     width: 250px;
-  }
-  .Search .search-form {
-    margin: 55px auto auto 280px;
   }
 
   .right div {
     font-size: 20px;
-  }
-  .App {
-    max-width: fit-content;
-    min-width: fit-content;
   }
 
   .Weather {
@@ -46,12 +51,61 @@
   }
 }
 @media (max-width: 768px) {
-  .search-form {
-    margin: 0 auto;
-    max-width: fit-content;
-  }
   .icon img {
     max-width: 60px;
+  }
+  .hello {
+    display: none;
+  }
+  .search-form {
+    margin-left: 25px;
+    min-width: fit-content;
+  }
+  .weather-today-text {
+    min-width: fit-content;
+    height: 200px;
+  }
+  .tue,
+  .now {
+    margin-bottom: 15px;
+    max-width: 90px;
+    display: inline-block;
+  }
+}
+@media (max-width: 720px) {
+  .tue,
+  .now {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    max-width: 150px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 679px) {
+  .weather-today-icon {
+    margin-top: 35px;
+    width: fit-content;
+    height: 150px;
+  }
+  .weather-today-icon img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+  }
+  .weather-today-icon p {
+    font-size: 20px;
+  }
+  .Weather .activeUnit {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  .Weather .unactiveUnit a {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  .Weather .unactiveUnit a:hover {
+    font-size: 25px;
   }
 }
 @media (max-width: 576px) {
@@ -64,15 +118,7 @@
     min-width: fit-content;
     height: fit-content;
   }
-  .Search {
-    display: inline;
-  }
-  .hello {
-    display: none;
-  }
-  .Search .search-form {
-    margin: 55px auto auto 30px;
-  }
+
   .current-location-button {
     padding: 5px;
     font-size: 15px;
@@ -85,37 +131,14 @@
     padding: 5px;
     font-size: 15px;
   }
-  .weather-today-text {
-    width: fit-content;
-    height: 200px;
-  }
   .weather-today-icon {
-    width: 300px;
-    height: 150px;
+    display: none;
   }
-  .weather-today-icon img {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-  }
-  .weather-today-icon p {
-    font-size: 20px;
-  }
-
   .tue,
   .now {
     margin-bottom: 15px;
-    max-width: 90px;
+    padding-bottom: 15px;
+    max-width: 100px;
     display: inline-block;
-    border: 1px solid black;
-    border-radius: 10px;
-  }
-
-  .Footer {
-    margin: 20px auto;
-    padding: 5px;
-    font-size: 15px;
-    text-align: center;
-    max-width: 450px;
   }
 }
