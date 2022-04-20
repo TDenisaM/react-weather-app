@@ -13,7 +13,7 @@ export default function WeatherForecastDaily(props) {
     return `${day}`;
   }
   return (
-    <div>
+    <div className="text-center">
       <div>{formatForecastDays(props.data.dt)}</div>
       <div className="icon">
         <WeatherIcon
