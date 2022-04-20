@@ -12,7 +12,9 @@
   margin: 5px auto;
   display: block;
 }
-
+.Search .search-form {
+  padding-top: 30px;
+}
 .Search .search-box {
   font-size: 20px;
   padding: 10px;

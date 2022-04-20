@@ -43,7 +43,19 @@ export default function Search(props) {
     event.preventDefault();
     searchData();
   }
-
+  function currentPosition(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let units = "metric";
+    let apiKey = "c263b408beea5a53bf5cae8b844890fd";
+    let apiEndPoint = "https://api.openweathermap.org/data/2.5/weather?";
+    let apiUrl = `${apiEndPoint}lat=${latitude}&lon=${longitude}&units=${units}&appid=${apiKey}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+  function getCurrentPosition(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(currentPosition);
+  }
   if (weatherData.ready) {
     return (
       <div>
@@ -76,12 +88,14 @@ export default function Search(props) {
               <button
                 type="button"
                 className="btn btn-primary current-location-button"
+                onClick={getCurrentPosition}
               >
                 Current Location
               </button>
             </form>
           </div>
         </div>
+
         <WeatherContent data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>

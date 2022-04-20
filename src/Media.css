@@ -3,13 +3,16 @@
     max-width: fit-content;
     min-width: fit-content;
   }
-  .Search .hello {
+  .hello {
     font-size: 20px;
     padding-right: 0;
   }
-  .Search .logo {
+  .logo {
     margin: 5px 25px;
     display: block;
+  }
+  .search-form {
+    padding-top: 0px;
   }
   .search-box {
     width: 250px;
