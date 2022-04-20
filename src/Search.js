@@ -3,6 +3,7 @@ import axios from "axios";
 
 import WeatherContent from "./WeatherContent";
 import WeatherForecast from "./WeatherForecast.js";
+import Background from "./Background.js";
 
 import "./Media.css";
 import "./Search.css";
@@ -95,7 +96,7 @@ export default function Search(props) {
             </form>
           </div>
         </div>
-
+        <Background cod={weatherData.icon} />
         <WeatherContent data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>

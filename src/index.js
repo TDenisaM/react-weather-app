@@ -11,7 +11,7 @@ import "./Media.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="App">
       <div className="cantainer wrapper-container">
         <Search defaultCity="Oslo" />
         <Footer />

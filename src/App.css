@@ -1,5 +1,4 @@
 .App {
-  background-image: url(./imagesBackgrounds/background_default_day.jpg);
   background-size: cover;
   max-width: 1200px;
   background-blend-mode: lighten, exclusion;
