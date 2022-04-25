@@ -1,6 +1,9 @@
 .Search {
   display: inline;
 }
+.background {
+  background-size: cover;
+}
 .Search .hello {
   margin-left: 30px;
   color: #12556d;

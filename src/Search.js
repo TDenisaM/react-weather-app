@@ -58,8 +58,34 @@ export default function Search(props) {
     navigator.geolocation.getCurrentPosition(currentPosition);
   }
   if (weatherData.ready) {
+    const codeMapping = {
+      "01d": "clear-sky-day",
+      "01n": "clear-sky-night",
+      "02d": "cloudy-day",
+      "02n": "cloudy-night",
+      "03d": "cloudy-day",
+      "03n": "cloudy-night",
+      "04d": "cloudy-day",
+      "04n": "cloudy-night",
+      "09d": "shower-rain-day",
+      "09n": "shower-rain-night",
+      "10d": "rain-day",
+      "10n": "rain-night",
+      "11d": "thunderstorm-day",
+      "11n": "thunderstorm-night",
+      "13d": "snow-day",
+      "13n": "snow-night",
+      "50d": "fog-day",
+      "50n": "fog-night",
+    };
+    let nameBc = codeMapping[weatherData.icon];
     return (
-      <div>
+      <div
+        className="background"
+        style={{
+          backgroundImage: `url({background/${nameBc}.jpg})`,
+        }}
+      >
         <div className="Search">
           <div className="row">
             <div className="col-5 hello-logo">
@@ -96,7 +122,7 @@ export default function Search(props) {
             </form>
           </div>
         </div>
-        <Background cod={weatherData.icon} />
+
         <WeatherContent data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>

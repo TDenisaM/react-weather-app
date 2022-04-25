@@ -1,6 +1,3 @@
-import React from "react";
-import "./App.css";
-
 export default function Background(props) {
   const codeMapping = {
     "01d": "clear-sky-day",
@@ -24,8 +21,5 @@ export default function Background(props) {
   };
   let name = codeMapping[props.code];
 
-  return (document.getElementById(
-    "App"
-  ).style.backgroundImage = url({`background/${name}.png`})
-  );
+  return `url({background/${name}.jpg})`;
 }
