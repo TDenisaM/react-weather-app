@@ -9,13 +9,13 @@
 }
 .Weather .small {
   font-size: 20px;
-  color: rgb(82, 83, 87);
-  padding-left: 25px;
+  color: rgb(0, 0, 1);
+  padding-left: 50px;
 }
 .Weather .date {
   line-height: 40px;
   font-size: 30px;
-  padding-left: 25px;
+  padding-left: 50px;
 }
 .Weather .today {
   font-size: 30px;
@@ -32,20 +32,18 @@
 
 .Weather .city-weather {
   margin: 0 auto;
-
   text-align: left;
   font-weight: 900;
   padding-left: 25px;
 }
 .Weather .city {
-  font-size: 60px;
+  font-size: 50px;
   display: block;
-  margin: 20px auto 0 auto;
-  line-height: 50px;
+  margin-top: 20px;
+  line-height: 40px;
 }
 .Weather .country {
   display: block;
-  margin: 5px auto auto;
   font-size: 30px;
 }
 .Weather .current-temp {
@@ -53,39 +51,20 @@
   margin-top: 20px;
   margin-right: 20px;
   font-size: 80px;
+  line-height: 70px;
 }
 
 .Weather .activeUnit {
-  font-size: 20px;
+  font-size: 30px;
   margin: 0 10px;
   position: relative;
   display: inline;
   top: -30px;
-  padding-left: 0;
+  padding: 5px;
   border: solid;
   border-width: thin;
   border-color: rgb(19, 107, 120);
   border-radius: 8px;
-}
-.Weather .unactiveUnit a {
-  font-size: 20px;
-  margin: 0 10px;
-  position: relative;
-  display: inline;
-  top: -30px;
-  padding-left: 0;
-  text-decoration: none;
-  color: rgb(19, 107, 120);
-}
-.Weather .unactiveUnit a:hover {
-  font-size: 40px;
-  cursor: pointer;
-  position: relative;
-  display: inline;
-  top: -30px;
-  padding-left: 0;
-  text-decoration: none;
-  color: rgb(19, 107, 120);
 }
 .Weather .weather-today-icon img {
   display: block;

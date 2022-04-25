@@ -3,9 +3,15 @@
     max-width: fit-content;
     min-width: fit-content;
   }
+  .Search {
+    min-width: 100%;
+    min-height: 100%;
+  }
   .hello {
-    font-size: 20px;
-    padding-right: 0;
+    display: none;
+  }
+  .wrapper-container {
+    width: fit-content;
   }
   .logo {
     margin: 5px 25px;
@@ -15,7 +21,7 @@
     padding-top: 0px;
   }
   .search-box {
-    width: 250px;
+    width: 200px;
   }
 
   .right div {
@@ -57,9 +63,7 @@
   .icon img {
     max-width: 60px;
   }
-  .hello {
-    display: none;
-  }
+
   .search-form {
     margin-left: 25px;
     min-width: fit-content;
@@ -67,6 +71,11 @@
   .weather-today-text {
     min-width: fit-content;
     height: 200px;
+  }
+  .weather-today-icon img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
   }
   .tue,
   .now {
@@ -91,11 +100,7 @@
     width: fit-content;
     height: 150px;
   }
-  .weather-today-icon img {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-  }
+
   .weather-today-icon p {
     font-size: 20px;
   }

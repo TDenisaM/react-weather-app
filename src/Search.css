@@ -1,26 +1,44 @@
 .Search {
   display: inline;
+  max-width: fit-content;
+  max-height: fit-content;
 }
-.background {
-  background-size: cover;
+.bg-img {
+  border-radius: 50px;
+  border: 0px;
+
+  background-repeat: repeat;
+  transition: 0.4 ease-out;
 }
-.Search .hello {
-  margin-left: 30px;
-  color: #12556d;
-  text-shadow: 5px 5px 2px rgb(129, 172, 179);
-  font-size: 30px;
-  font-weight: 900;
+
+.wrapper-container {
+  font-family: PT mono, monospace;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 30px 30px 10px;
+  border-radius: 50px;
+  min-height: fit-content;
+  margin: 100px;
 }
-.Search .logo {
-  margin: 5px auto;
-  display: block;
+.cont {
+  margin: 50px auto auto;
+}
+.card-content {
+  padding: 0;
+  border-radius: 50px;
+  border: 0px;
 }
 .Search .search-form {
   padding-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 .Search .search-box {
   font-size: 20px;
-  padding: 10px;
+  padding: 15px;
   color: #1c7696;
   border: solid;
   border-color: #1c7696;
@@ -29,7 +47,6 @@
 }
 .Search .search-button {
   padding: 10px 15px;
-
   font-size: 20px;
   font-style: bolder;
   border: solid;

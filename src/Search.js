@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import Background from "./Background";
 import WeatherContent from "./WeatherContent";
 import WeatherForecast from "./WeatherForecast.js";
+import Footer from "./Footer.js";
 
 import "./Media.css";
 import "./Search.css";
@@ -43,8 +43,10 @@ export default function Search(props) {
   function handleSubmit(event) {
     event.preventDefault();
     searchData();
-    <Background code={weatherData.icon} alt={weatherData.description} />;
   }
+
+  //current location botton
+
   function currentPosition(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
@@ -58,54 +60,85 @@ export default function Search(props) {
     event.preventDefault();
     navigator.geolocation.getCurrentPosition(currentPosition);
   }
+
+  //changing background
+
+  function weatherBc() {
+    const codeMapping = {
+      "01d": "clear-sky-day",
+      "01n": "clear-sky-night",
+      "02d": "cloudy-day",
+      "02n": "cloudy-night",
+      "03d": "cloudy-day",
+      "03n": "cloudy-night",
+      "04d": "cloudy-day",
+      "04n": "cloudy-night",
+      "09d": "shower-rain-day",
+      "09n": "shower-rain-night",
+      "10d": "rain-day",
+      "10n": "rain-night",
+      "11d": "thunderstorm-day",
+      "11n": "thunderstorm-night",
+      "13d": "snow-day",
+      "13n": "snow-night",
+      "50d": "fog-day",
+      "50n": "fog-night",
+    };
+    let name = codeMapping[weatherData.icon];
+    let description = [weatherData.icon];
+    return (
+      <img
+        src={`background/${name}.jpg`}
+        alt={`${description}`}
+        className="bg-img border-0 w-100 h-100"
+      />
+    );
+  }
   if (weatherData.ready) {
     return (
-      <div>
-        <div className="Search">
-          <div className="row">
-            <div className="col-5 hello-logo">
-              <h1 className="hello">
-                Your weather
-                <img
-                  className="logo"
-                  src="/images/weather-app.svg"
-                  alt=""
-                  width="175px 125px"
-                />
-              </h1>
+      <div className="Search">
+        <div className="container cont">
+          <div className="row justify-content-center">
+            <div className="card text-white card-content">
+              <div className="col-sm-12">
+                {weatherBc()}
+                <div className="card-img-overlay wrapper-container">
+                  <div className="container">
+                    <div className="row">
+                      <form onSubmit={handleSubmit} className="search-form">
+                        <input
+                          className="search-box"
+                          type="search"
+                          placeholder="Type city"
+                          autoComplete="off"
+                          autoFocus="on"
+                          onChange={updateCity}
+                        />
+                        <button
+                          type="submit"
+                          className="input-group-text search-button"
+                          id="basic-addon2"
+                        >
+                          <i className="fas fa-search"></i>
+                        </button>
+                        <button
+                          type="button"
+                          className="btn btn-primary current-location-button"
+                          onClick={getCurrentPosition}
+                        >
+                          Current Location
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <WeatherContent data={weatherData} />
+                  <WeatherForecast coordinates={weatherData.coordinates} />
+                  <Footer />
+                </div>
+              </div>
             </div>
-            <form
-              onSubmit={handleSubmit}
-              className="col-7 align-middle search-form"
-            >
-              <input
-                className="search-box"
-                type="search"
-                placeholder="Type city"
-                autoComplete="off"
-                autoFocus="on"
-                onChange={updateCity}
-              />
-              <button
-                type="submit"
-                class="input-group-text"
-                id="basic-addon2"
-                className="search-button"
-              >
-                <i className="fas fa-search"></i>
-              </button>
-              <button
-                type="button"
-                className="btn btn-primary current-location-button"
-                onClick={getCurrentPosition}
-              >
-                Current Location
-              </button>
-            </form>
           </div>
         </div>
-        <WeatherContent data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
