@@ -11,10 +11,19 @@ import "./Media.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <div className="cantainer wrapper-container">
-        <Search defaultCity="Oslo" />
-        <Footer />
+    <div className="container">
+      <div className="row">
+        <div className="card bg-dark text-white App">
+          <img
+            src="https://source.unsplash.com/600x900/?nature,water"
+            alt="..."
+            className="bg-img border-0"
+          />
+          <div className="card-img-overlay m-5 p-5 wrapper-container ">
+            <Search defaultCity="Oslo" />
+            <Footer />
+          </div>
+        </div>
       </div>
     </div>
   );

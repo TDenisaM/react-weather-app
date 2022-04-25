@@ -129,6 +129,7 @@
   .search-box {
     font-size: 15px;
     padding: 5px;
+    width: 170px;
   }
   .search-button {
     padding: 5px;
@@ -143,5 +144,10 @@
     padding-bottom: 15px;
     max-width: 100px;
     display: inline-block;
+  }
+}
+@media (max-width: 384px) {
+  .search-box {
+    width: 140px;
   }
 }

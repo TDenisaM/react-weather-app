@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Background(props) {
   const codeMapping = {
     "01d": "clear-sky-day",
@@ -21,5 +23,12 @@ export default function Background(props) {
   };
   let name = codeMapping[props.code];
 
-  return `url({background/${name}.jpg})`;
+  return (
+    <img
+      className="todays-icon"
+      src={`background/${name}.jpg`}
+      alt={props.alt}
+      sizes="cover"
+    />
+  );
 }
