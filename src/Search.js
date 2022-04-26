@@ -100,7 +100,7 @@ export default function Search(props) {
         <div className="container justify-content-center cont">
           <div className="row justify-content-center">
             <div className="card text-white card-content">
-              <div className="col-sm-12">
+              <div className="col-l-12">
                 {weatherBc()}
                 <div className="card-img-overlay wrapper-container">
                   <div className="container">
@@ -123,10 +123,10 @@ export default function Search(props) {
                         </button>
                         <button
                           type="button"
-                          className="btn btn-primary current-location-button"
+                          className="btn btn-primary  current-location-button"
                           onClick={getCurrentPosition}
                         >
-                          Current Location
+                          <i className="fa-solid fa-location-dot"></i>
                         </button>
                       </form>
                     </div>

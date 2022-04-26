@@ -7,22 +7,6 @@
     min-width: 100%;
     min-height: 100%;
   }
-  .hello {
-    display: none;
-  }
-  .wrapper-container {
-    width: fit-content;
-  }
-  .logo {
-    margin: 5px 25px;
-    display: block;
-  }
-  .search-form {
-    padding-top: 0px;
-  }
-  .search-box {
-    width: 200px;
-  }
 
   .right div {
     font-size: 20px;
@@ -119,12 +103,10 @@
 @media (max-width: 576px) {
   .App {
     max-width: fit-content;
-    min-width: fit-content;
   }
   .wrapper-container {
+    margin: 60px;
     max-width: fit-content;
-    min-width: fit-content;
-    height: fit-content;
   }
 
   .current-location-button {
@@ -152,7 +134,8 @@
   }
 }
 @media (max-width: 384px) {
-  .search-box {
+  .Search .search-box {
     width: 140px;
+    font-size: 10px;
   }
 }
