@@ -4,7 +4,6 @@
   margin: 0 auto;
 }
 .bg-img {
-  border-radius: 50px;
   border: 0px;
   display: block;
   margin: 0 auto;
@@ -14,6 +13,9 @@
   position: fixed;
   top: 0;
   left: 0;
+}
+.bg-img img {
+  border-radius: 50px;
 }
 
 .wrapper-container {
