@@ -90,14 +90,14 @@ export default function Search(props) {
       <img
         src={`background/${name}.jpg`}
         alt={`${description}`}
-        className="bg-img border-0 w-100 h-100"
+        className="bg-img"
       />
     );
   }
   if (weatherData.ready) {
     return (
       <div className="Search">
-        <div className="container cont">
+        <div className="container justify-content-center cont">
           <div className="row justify-content-center">
             <div className="card text-white card-content">
               <div className="col-sm-12">

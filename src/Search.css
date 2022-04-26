@@ -1,14 +1,12 @@
 .Search {
   display: inline;
-  max-width: fit-content;
-  max-height: fit-content;
 }
 .bg-img {
   border-radius: 50px;
   border: 0px;
-
-  background-repeat: repeat;
   transition: 0.4 ease-out;
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 .wrapper-container {
@@ -23,6 +21,7 @@
   min-height: fit-content;
   margin: 100px;
 }
+
 .cont {
   margin: 50px auto auto;
 }
