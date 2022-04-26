@@ -87,11 +87,18 @@ export default function Search(props) {
     let name = codeMapping[weatherData.icon];
     let description = [weatherData.icon];
     return (
-      <img
-        src={`background/${name}.jpg`}
-        alt={`${description}`}
-        className="bg-img"
-      />
+      <div>
+        <img
+          src={`background/${name}.jpg`}
+          alt={`${description}`}
+          className="bg-img"
+        />
+        <img
+          src={`background/${name}.jpg`}
+          alt={`${description}`}
+          className="d-lg-none d-md-block bg-img"
+        />
+      </div>
     );
   }
   if (weatherData.ready) {
