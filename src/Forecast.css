@@ -17,6 +17,7 @@
   font-weight: 900;
   font-size: 25px;
   text-align: center;
+  justify-content: space-evenly;
 }
 .Forecast .dailyTemperature,
 .Forecast .temperatureDaily {
@@ -35,6 +36,7 @@
   font-weight: 900;
   font-size: 25px;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .Forecast .temperature-min {

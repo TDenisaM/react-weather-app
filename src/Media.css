@@ -40,7 +40,7 @@
     font-size: 20px;
     padding: 0;
     margin: 0;
-    max-width: fit-content;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -83,6 +83,7 @@
     margin-top: 35px;
     width: fit-content;
     height: 150px;
+    justify-content: center;
   }
 
   .weather-today-icon p {

@@ -41,7 +41,7 @@ export default function WeatherContent(props) {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 d-flex align-items-center mb-5 today-right ">
+          <div className="col-lg-4 d-flex align-items-center mb-3 today-right ">
             <div className="card mb-3 today">
               <div className="row d-flex right">
                 <div className="col-md-12 conditions">

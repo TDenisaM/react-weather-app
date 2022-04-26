@@ -91,12 +91,7 @@ export default function Search(props) {
         <img
           src={`background/${name}.jpg`}
           alt={`${description}`}
-          className="bg-img"
-        />
-        <img
-          src={`background/${name}.jpg`}
-          alt={`${description}`}
-          className="d-lg-none d-md-block bg-img"
+          className="img-fluid bg-img"
         />
       </div>
     );
@@ -107,7 +102,7 @@ export default function Search(props) {
         <div className="container justify-content-center cont">
           <div className="row justify-content-center">
             <div className="card text-white card-content">
-              <div className="col-l-12">
+              <div className="col-sm-12">
                 {weatherBc()}
                 <div className="card-img-overlay wrapper-container">
                   <div className="container">
