@@ -7,7 +7,15 @@
     min-width: 100%;
     min-height: 100%;
   }
-
+  .bg-img {
+    width: 100%;
+  }
+  .wrapper-container {
+    min-width: fit-content;
+    border-radius: 50px;
+    margin: auto;
+    align-items: center;
+  }
   .right div {
     font-size: 20px;
   }
@@ -44,6 +52,17 @@
   }
 }
 @media (max-width: 768px) {
+  .weather-today-icon {
+    margin-top: 35px;
+    width: fit-content;
+    height: 150px;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  .weather-today-icon p {
+    font-size: 20px;
+  }
   .icon img {
     max-width: 60px;
   }
@@ -79,16 +98,6 @@
 }
 
 @media (max-width: 679px) {
-  .weather-today-icon {
-    margin-top: 35px;
-    width: fit-content;
-    height: 150px;
-    justify-content: center;
-  }
-
-  .weather-today-icon p {
-    font-size: 20px;
-  }
   .Weather .activeUnit {
     font-size: 20px;
     margin: 0 5px;

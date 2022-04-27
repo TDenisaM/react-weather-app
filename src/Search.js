@@ -102,9 +102,9 @@ export default function Search(props) {
         <div className="container justify-content-center cont">
           <div className="row justify-content-center">
             <div className="card text-white card-content">
-              <div className="col-sm-12">
+              <div className="col-md-12">
                 {weatherBc()}
-                <div className="card-img-overlay wrapper-container">
+                <div className="card-img-overlay position-relative mb-3 wrapper-container">
                   <div className="container">
                     <div className="row">
                       <form onSubmit={handleSubmit} className="search-form">

@@ -10,7 +10,7 @@
   text-align: center;
   padding: 10px 5px;
   border-radius: 30px;
-  background-color: rgba(130, 141, 142, 0.409);
+  background-color: rgba(100, 108, 108, 0.638);
 }
 .Forecast .now {
   margin: 0 auto;
@@ -28,7 +28,7 @@
   padding: 10px 5px;
   margin: 25px auto;
   border-radius: 30px;
-  background-color: rgba(130, 141, 142, 0.409);
+  background-color: rgba(100, 108, 108, 0.638);
 }
 
 .Forecast .tue {
