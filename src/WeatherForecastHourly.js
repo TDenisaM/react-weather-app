@@ -14,8 +14,10 @@ export default function WeatherForecastHourly(props) {
   }
 
   return (
-    <div>
-      <div className="text-center">{formatHourlyTime(props.data.dt)}</div>
+    <div className="WeatherForecastHourly">
+      <div className="text-center dailyTime">
+        {formatHourlyTime(props.data.dt)}
+      </div>
       <div className="icon">
         <WeatherIcon
           code={props.data.weather[0].icon}

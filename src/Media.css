@@ -52,6 +52,49 @@
   }
 }
 @media (max-width: 768px) {
+  .search-form {
+    margin-left: 25px;
+    min-width: fit-content;
+  }
+  .weather-today-text {
+    min-width: fit-content;
+    height: 200px;
+  }
+
+  .Forecast .tue,
+  .Forecast .now {
+    max-width: 80px;
+    display: inline-block;
+  }
+  .WeatherForecastDaily .day,
+  .WeatherForecastDaily .temp,
+  .WeatherForecastHourly .dailyTime,
+  .WeatherForecastHourly .dailyTemperature {
+    font-size: 16px;
+  }
+
+  .Forecast .icon img {
+    width: 70px;
+  }
+}
+@media (max-width: 720px) {
+  .WeatherForecastDaily .day,
+  .WeatherForecastDaily .temp,
+  .WeatherForecastHourly .dailyTime,
+  .WeatherForecastHourly .dailyTemperature {
+    font-size: 20px;
+  }
+
+  .Forecast .icon img {
+    width: 80px;
+  }
+  .Forecast .tue,
+  .Forecast .now {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 679px) {
   .weather-today-icon {
     margin-top: 35px;
     width: fit-content;
@@ -63,51 +106,15 @@
   .weather-today-icon p {
     font-size: 20px;
   }
-  .icon img {
-    max-width: 60px;
-  }
-
-  .search-form {
-    margin-left: 25px;
-    min-width: fit-content;
-  }
-  .weather-today-text {
-    min-width: fit-content;
-    height: 200px;
-  }
   .weather-today-icon img {
     display: block;
     margin: 0 auto;
-    width: 80px;
+    width: 120px;
   }
-  .tue,
-  .now {
-    margin-bottom: 15px;
-    max-width: 90px;
-    display: inline-block;
-  }
-}
-@media (max-width: 720px) {
-  .tue,
-  .now {
-    margin-bottom: 15px;
+  .Forecast .tue,
+  .Forecast .now {
     padding-bottom: 15px;
-    max-width: 150px;
-    display: inline-block;
-  }
-}
-
-@media (max-width: 679px) {
-  .Weather .activeUnit {
-    font-size: 20px;
-    margin: 0 5px;
-  }
-  .Weather .unactiveUnit a {
-    font-size: 20px;
-    margin: 0 5px;
-  }
-  .Weather .unactiveUnit a:hover {
-    font-size: 25px;
+    padding-top: 10px;
   }
 }
 @media (max-width: 576px) {
@@ -116,12 +123,11 @@
   }
   .current-location-button {
     padding: 5px;
-    font-size: 15px;
   }
   .search-box {
     font-size: 15px;
     padding: 5px;
-    width: 170px;
+    width: 200px;
   }
   .search-button {
     padding: 5px;
@@ -130,17 +136,18 @@
   .weather-today-icon {
     display: none;
   }
-  .tue,
-  .now {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    max-width: 100px;
-    display: inline-block;
+  .Forecast .tue,
+  .Forecast .now {
+    max-width: 125px;
   }
 }
 @media (max-width: 384px) {
   .Search .search-box {
     width: 140px;
     font-size: 10px;
+  }
+  .Forecast .tue,
+  .Forecast .now {
+    max-width: 90px;
   }
 }

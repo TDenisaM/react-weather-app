@@ -13,15 +13,15 @@ export default function WeatherForecastDaily(props) {
     return `${day}`;
   }
   return (
-    <div className="justify-content-center">
-      <div>{formatForecastDays(props.data.dt)}</div>
+    <div className="WeatherForecastDaily">
+      <div className="day">{formatForecastDays(props.data.dt)}</div>
       <div className="icon">
         <WeatherIcon
           code={props.data.weather[0].icon}
           alt={props.data.weather[0].description}
         />
       </div>
-      <div className="temperatureDaily">
+      <div className="temperatureDaily temp">
         <span className="temperature-max">
           {Math.round(props.data.temp.max)}°
         </span>
