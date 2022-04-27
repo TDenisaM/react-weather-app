@@ -111,14 +111,9 @@
   }
 }
 @media (max-width: 576px) {
-  .App {
-    max-width: fit-content;
-  }
   .wrapper-container {
-    margin: 60px;
-    max-width: fit-content;
+    box-shadow: none;
   }
-
   .current-location-button {
     padding: 5px;
     font-size: 15px;
