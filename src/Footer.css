@@ -1,8 +1,8 @@
 .Footer {
-  margin: 25px auto 0px auto;
+  margin: 60px auto 0px auto;
   padding: 5px;
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 900;
   width: fit-content;
   background-color: rgba(221, 181, 212, 0.6);
@@ -11,16 +11,27 @@
   border-color: #af42b3b1;
 }
 .Footer a {
+  color: rgb(105, 5, 80);
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .Footer span {
-    font-size: 11px;
+    font-size: 15px;
   }
   .Footer {
     border-radius: 20px;
     padding: 3px 5px;
-    line-height: 12px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .Footer span {
+    font-size: 10px;
+  }
+  .Footer {
+    border-radius: 20px;
+    padding: 3px 5px;
+    line-height: 16px;
   }
 }
